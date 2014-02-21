@@ -11,10 +11,29 @@ alert("JavaScript works!");
  	
  	//functions 
  
+ var myDay = function(today){
+ var howsMyDay;
+ 	if( today == true ) {
+ 		
+ 	howsMyDay ="I will be going to " + companyName + " where I work.";
+ 	
+ 	}else{
+ 	
+ 	howsMyDay = "I guess it's family day." ;
+ 	
+ 	return howsMyDay;
+ 	
+ 	};
+ 
+ };	  	
+ 
  
  var workWith = function(myCoWorkers){
-   		for(var i = 0; i < coWorkers.length; i++){
-   		 	console.log("My co-workers are " + coWorkers[i]);
+ 
+ for (var i = 0; i < myCoWorkers.length; i++){
+ 
+ 	console.log("My co-workers are " + myCoWorkers[i]);
+ 	
    		};
    };
   
@@ -22,23 +41,27 @@ alert("JavaScript works!");
    
    
  var hrsPerDay = function(myhrs){
+ var hrs;
      if (hrsPerWeek => 40){
    		
    		if(hrsPerWeek => 50){
    		
-   			console.log("Taxes is going to kill my overtime");
+   			hrs = "Taxes is going to kill my overtime";
    		
    		}else{
-   			console.log("I had a good week")
+   		
+   			hrs =  "I had a good week"
+   		
    		}
    				
    
    
    }else{
    
-   	console.log("I had a bad week")
+   	hrs = ("I had a bad week")
      
-   };    
+   }; 
+    return hrs;   
  };
  
  
@@ -53,11 +76,12 @@ alert("JavaScript works!");
  
 
 
-
  
  
  
  	// Main code 
- workWith(coWorkers[2]);
+ myDay(workToday)
+ workWith(coWorkers);
  logIn(daiyLogHrs);
- hrsPerDay();
+ hrsPerDay(hrsPerWeek);
+ 
