@@ -12,14 +12,15 @@ alert("JavaScript works!");
  	//functions 
  
  var myDay = function(today){
- var howsMyDay;
+ var workDay;
+ var homeDay
  	if( today == true ) {
  		
  	howsMyDay ="I will be going to " + companyName + " where I work.";
  	
  	}else{
  	
- 	howsMyDay = "I guess it's family day." ;
+ 	homeDay = "I guess it's family day." ;
  	
  	return howsMyDay;
  	
@@ -40,17 +41,19 @@ alert("JavaScript works!");
 
    
    
- var hrsPerDay = function(myhrs){
- var hrs;
-     if (hrsPerWeek => 40){
+ var hrsPerDay = function(myHrs){
+ var okHrs;
+ var goodHrs;
+ var badHrs;
+     if (myHrs => 40){
    		
-   		if(hrsPerWeek => 50){
+   		if(myHrs => 50){
    		
-   			hrs = "Taxes is going to kill my overtime";
+   			okhrs = "Taxes is going to kill my overtime";
    		
    		}else{
    		
-   			hrs =  "I had a good week"
+   			Goodhrs =  "I had a good week"
    		
    		}
    				
@@ -58,7 +61,7 @@ alert("JavaScript works!");
    
    }else{
    
-   	hrs = ("I had a bad week")
+   	badHrs = ("I had a bad week")
      
    }; 
     return hrs;   
@@ -66,9 +69,14 @@ alert("JavaScript works!");
  
  
  var logIn = function(myLogs){
+ var logs;
+ 
  	for(i = 0; i > mylogs.length; i++)
- 	 console.log(myLogs[i] + "is " + (i + 1) + "Log in.") 
+ 	
+ 	 logs = myLogs[i] + "is " + (i + 1) + "Log in." 
  	 myLogs.push(6)
+ 	 
+ 	 return logs; 
  		 
  	 
  }
