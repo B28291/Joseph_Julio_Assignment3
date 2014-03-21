@@ -1,70 +1,94 @@
 //alert("JavaScript works!");
-
-
-	//global variables
+	// Global Variables 
+ var workToday = true;
+ var hrsPerWeek = 40;
+ var companyName = "NVC Logistics";
+ var coWorkers = ["Sergio ", "Barbra ", "Sal ","Justin ", "Ernie "];
+ var dailyLogHrs = [8, 7, 8, 9, 8];
+ 	
+ 	
+ 	
+ 	//functions 
  
-var workToday = false;
-var companyName = "IceCoffee";
-var excerices = ["chest","legs","arms","back"];
-var dailyHobbies = ["Exercise","babysitt","library",];
-var commute = 1;
-	
-	//functions
-	
-var mornings = function(myDay){
- 	if (myDay == true){
- 	 	console.log("I have to work today.")
- 	}else{console.log("Ill go to the library or the gym.")};
+ var myDay = function(today){
+ var workDay;
+ var homeDay
+ 	if( today == true ) {
+ 		
+ 	howsMyDay ="I will be going to " + companyName + " where I work.";
+ 	
+ 	}else{
+ 	
+ 	homeDay = "I guess it's family day." ;
+ 	
+ 	return howsMyDay;
+ 	
+ 	};
+ 
+ };	  	
+ 
+ 
+ var workWith = function(myCoWorkers){
+ 
+ for (var i = 0; i < myCoWorkers.length; i++){
+ 
+ 	console.log("My co-workers are " + myCoWorkers[i]);
+ 	
+   		};
+   };
+  
 
-};	
+   
+   
+ var hrsPerDay = function(myHrs){
+ var okHrs;
+ var goodHrs;
+ var badHrs;
+     if (myHrs => 40){
+   		
+   		if(myHrs => 50){
+   		
+   			okhrs = "Taxes is going to kill my overtime";
+   		
+   		}else{
+   		
+   			Goodhrs =  "I had a good week"
+   		
+   		}
+   				
+   
+   
+   }else{
+   
+   	badHrs = ("I had a bad week")
+     
+   }; 
+    return hrs;   
+ };
+ 
+ 
+ var logIn = function(myLogs){
+ var logs;
+ 
+ 	for(i = 0; i > mylogs.length; i++)
+ 	
+ 	 logs = myLogs[i] + "is " + (i + 1) + "Log in." 
+ 	 myLogs.push(6)
+ 	 
+ 	 return logs; 
+ 		 
+ 	 
+ }
+ 
+ 
 
-var startOff = function(myDay){};
 
-for( i = 0;i < dailyHobbies.length; i++){}
-		if(dailyHobbies[i] == ("Exercise"){
-			for(p = 0; p < excerices; p++){
- 		 	console.log("Ill start off my day with " + dailyHobbies[1] + "and ill do " + excerices[P]);
-			};
-		
-		}else{console.log("Ill have to " + dailyHobbies[2]);
-	
-};
-
-	
-	 
-
-
-var workOut = function(){
-
-
-
-}; 
-
-var dinner = function(){
-
-
-
-};
-
-var myDay = function(){
-
-
-};
-
-
-
-
-
-
-
-
-
-
-	//main code 
-	
-morning(workToday);
-var doingToday = prompt("What are you doing today?");
-startOff(doingToday);
-workOut();
-dinner():
-myDay();
+ 
+ 
+ 
+ 	// Main code 
+ myDay(workToday)
+ workWith(coWorkers);
+ logIn(daiyLogHrs);
+ hrsPerDay(hrsPerWeek);
+ 
